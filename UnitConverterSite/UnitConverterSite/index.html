@@ -5,6 +5,22 @@
     <title></title>
 </head>
 <body>
-
+    <div id="app">
+        <p>A Elbereth Gilthoniel</p>
+        <input v-model="input"/>
+        <p>Input: {{input}}</p>
+    </div>
 </body>
 </html>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            input: ""
+        },
+        methods: {
+            
+        }
+    })
+</script>
