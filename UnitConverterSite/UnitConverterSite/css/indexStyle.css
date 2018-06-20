@@ -1,0 +1,15 @@
+﻿body {
+    font-family: "Playfair Display", serif;
+}
+.title {
+    top: 45%;
+    left: 38%;
+    transform-origin: center;
+    font-size: 50px;
+}
+hr {
+    width: 50%;
+}
+.button {
+    padding: 20px 30px 20px 30px;
+}
