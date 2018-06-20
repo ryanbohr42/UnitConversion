@@ -12,4 +12,13 @@ hr {
 }
 .button {
     padding: 20px 30px 20px 30px;
+    background-color: #66a7a7;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Lato";
 }
+
+    .button:hover {
+        background-color: #558c8c;
+    }
