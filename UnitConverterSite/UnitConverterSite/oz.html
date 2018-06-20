@@ -10,9 +10,9 @@
 <body>
     <div id="app">
         
-        <input v-model="cups" v-on:input="convert"/>
+        <input v-model="cups" v-on:input="conCtoO"/>
         <p>Cups: {{cups}}</p>
-        <input v-model="oz" />
+        <input v-model="oz" v-on:input="conOtoC"/>
         <p>Oz: {{oz}}</p>
         <a href="index.html">Back to Home</a>
     </div>
@@ -27,8 +27,12 @@
             oz: ""
         },
         methods: {
-            convert: function () {
+            conCtoO: function () {
                 this.oz = this.cups * 8;
+            },
+
+            conOtoC: function () {
+                this.cups = this.oz / 8;
             }
         }
     })
