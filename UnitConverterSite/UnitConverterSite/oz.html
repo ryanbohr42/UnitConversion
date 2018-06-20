@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cups to Oz</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        
+        <input v-model="cups" v-on:input="convert"/>
+        <p>Cups: {{cups}}</p>
+        <input v-model="oz" />
+        <p>Oz: {{oz}}</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            cups: "",
+            oz: ""
+        },
+        methods: {
+            convert: function () {
+                this.oz = this.cups * 8;
+            }
+        }
+    })
+</script>
