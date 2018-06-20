@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CONVERSIONMASTERS - Cups to Tablespoons</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Cups to TBSP</h1>
+        <input v-model="cups" type="number" v-on:input="convert"/>
+        <p>{{tablespoons}}</p>
+
+    </div>
+   
+</body>
+</html>
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var app = new Vue({
+    el: '#app',
+    data: {
+        cups: "",
+            //input
+        tablespoons: ""
+            //output
+        },
+    methods: {
+
+        convert: function () {
+            this.tablespoons = this.cups * 16;
+            }
+        }
+    })</script>
